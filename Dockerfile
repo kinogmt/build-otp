@@ -1,4 +1,4 @@
-FROM quay.io/cloudian/cqc:kerl19.2
+FROM quay.io/cloudian/cqc:kerl19.2.fc24
 ENV INST=dnf
 # --- worker --------------------
 RUN (useradd -s /bin/bash worker; \
