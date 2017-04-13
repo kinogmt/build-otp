@@ -1,12 +1,10 @@
 version: "2"
-environment:
-  - TAG: centos
 services:
   otp:
     build:
       context: .
       dockerfile: Dockerfile
-    image: quay.io/cloudian/build-otp:${TAG}
+    image: quay.io/cloudian/build-otp:centos
     hostname: otp000
     privileged: true
     dns:
