@@ -1,5 +1,5 @@
-FROM quay.io/cloudian/cqc:kerl19.2
-ENV INST=dnf
+FROM quay.io/cloudian/cqc:kerl19.2.centos7
+ENV INST=yum
 # --- worker --------------------
 RUN (useradd -s /bin/bash worker; \
      echo 'worker:newpass' | chpasswd; \
