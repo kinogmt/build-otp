@@ -8,6 +8,6 @@ RUN (useradd -s /bin/bash worker; \
      echo "worker ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/sudoers)
 
 # --- install -----------------------
-RUN ${INST} install -y sudo git gcc-c++ asciidoc selinux-policy-devel
+RUN ${INST} install -y sudo git gcc-c++ asciidoc selinux-policy-devel findutils
 CMD tail -f /var/log/${INST}.log
 
