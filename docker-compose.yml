@@ -1,12 +1,10 @@
 version: "2"
-environment:
-  - TAG: fedora
 services:
   otp:
     build:
       context: .
       dockerfile: Dockerfile
-    image: quay.io/cloudian/build-otp:${TAG}
+    image: quay.io/cloudian/build-otp:fedora
     hostname: otp000
     privileged: true
     dns:
