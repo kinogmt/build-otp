@@ -1,6 +1,6 @@
 version: "2"
 environment:
-  - TAG: latest
+  - TAG: centos
 services:
   otp:
     build:
