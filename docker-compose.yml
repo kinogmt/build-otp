@@ -13,4 +13,5 @@ services:
     dns_search:
       - localdomain
     volumes:
+      - ~/work:/home/worker/work
       - ~/.ssh:/home/worker/.ssh
