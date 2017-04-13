@@ -1,5 +1,4 @@
 FROM quay.io/cloudian/cqc:kerl19.2
-CMD ["/usr/local/startservice.sh"]
 # --- worker --------------------
 RUN (useradd -s /bin/bash worker; \
      echo 'worker:newpass' | chpasswd; \
