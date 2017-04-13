@@ -1,10 +1,12 @@
 version: "2"
+environment:
+  - TAG: latest
 services:
   otp:
     build:
       context: .
       dockerfile: Dockerfile
-    image: quay.io/cloudian/build-otp
+    image: quay.io/cloudian/build-otp:${TAG}
     hostname: otp000
     privileged: true
     dns:
