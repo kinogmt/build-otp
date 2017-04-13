@@ -1,7 +1,5 @@
 FROM quay.io/cloudian/cqc:kerl19.2
-
 CMD ["/usr/local/startservice.sh"]
-
 # --- worker --------------------
 RUN (useradd -s /bin/bash worker; \
      echo 'worker:newpass' | chpasswd; \
@@ -11,6 +9,5 @@ RUN (useradd -s /bin/bash worker; \
 
 # --- install -----------------------
 RUN yum install -y sudo git gcc-c++ asciidoc selinux-policy-devel
-
 CMD tail -f /var/log/yum.log
 
