@@ -4,3 +4,5 @@ epmd -daemon
 rpcbind -w
 
 setcap cap_net_bind_service=ep /usr/local/docker/erl.*/erts-*/bin/beam.smp
+
+tail -f /var/log/${INST}.log
