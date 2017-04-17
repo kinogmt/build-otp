@@ -9,5 +9,8 @@ RUN (useradd -s /bin/bash worker; \
 
 # --- install -----------------------
 RUN ${INST} install -y sudo git gcc-c++ asciidoc selinux-policy-devel findutils rpcbind
+
+ADD startservice.sh /usr/local/startservice.sh
+
 CMD tail -f /var/log/${INST}.log
 
