@@ -27,5 +27,5 @@ Activate OTP
 Stop and remove container
 -----
 
-    $ docker-compose stop <cont>; docker-compose rm -f <cont>
+    $ docker-compose stop; docker-compose rm -f
     
