@@ -12,5 +12,5 @@ RUN ${INST} install -y sudo git gcc-c++ asciidoc selinux-policy-devel findutils 
 
 ADD startservice.sh /usr/local/startservice.sh
 
-CMD tail -f /var/log/${INST}.log
+CMD ["/usr/local/startservice.sh"] 
 
