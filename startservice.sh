@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ERL=/usr/local/docker/erl.19.2
+ERL=/usr/local/docker/erl.19.3
 
 setcap cap_net_bind_service=ep $ERL/erts-*/bin/beam.smp
 source $ERL/activate; epmd -daemon
