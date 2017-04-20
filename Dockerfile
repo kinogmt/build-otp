@@ -1,4 +1,4 @@
-FROM quay.io/cloudian/cqc:kerl19.2.centos7
+FROM quay.io/cloudian/cqc:kerl19.3.centos7
 ENV INST=yum
 # --- worker --------------------
 RUN (useradd -s /bin/bash worker; \
