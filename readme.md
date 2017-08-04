@@ -18,12 +18,6 @@ Attach to container
 
     $ docker exec -ti <cont> bash
 
-## ssh to container
-
-```
-ssh -p3122 -A worker@localhost
-```
-
 Activate OTP
 ----
 
