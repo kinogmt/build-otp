@@ -12,6 +12,8 @@ services:
       - 8.8.8.8
     dns_search:
       - localdomain
+    ports:
+      - "3122:22"
     volumes:
       - ~/work:/home/worker/work
       - ~/.ssh:/home/worker/.ssh
